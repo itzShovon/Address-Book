@@ -6,7 +6,8 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+    <title>Contained Doc.</title>
+    <link rel="icon" href="Data/Icon.png" type="image/png" sizes="16x16"> 
     <link rel="stylesheet" type="text/css" href="Data/DocumentStyle.css">
 </head>
 
@@ -24,42 +25,54 @@
                 <div class="MDTCol1">
                     <strong>User ID</strong><br>
                     <?php foreach($result2 as $row){ ?>
+                        <?php if(empty($row->user_ID)){ ?>
+                            <br>
+                        <?php } ?>
                         <p><?php echo $row->user_ID ?></p>
                     <?php } ?>
                 </div>
                 <div class="MDTCol2">
                     <strong>User Name</strong><br>
                     <?php foreach($result3 as $row){ ?>
+                        <?php if(empty($row->user_name)){ ?>
+                            <br>
+                        <?php } ?>
                         <p><?php echo $row->user_name ?></p>
                     <?php } ?>
                 </div>
                 <div class="MDTCol3">
                     <strong>User E-mail</strong><br>
                     <?php foreach($result2 as $row){ ?>
-                    <p><?php echo $row->user_email ?></p>
+                        <?php if(empty($row->user_email)){ ?>
+                            <br>
+                        <?php } ?>
+                        <p><?php echo $row->user_email ?></p>
                     <?php } ?>
                 </div>
                 <div class="MDTCol4">
                     <strong>User City</strong><br>
                     <?php foreach($result1 as $row){ ?>
-                    <?php if(empty($row->user_city)){ ?>
-                        <br>
-                    <?php } ?>
+                        <?php if(empty($row->user_city)){ ?>
+                            <br>
+                        <?php } ?>
                         <p><?php echo $row->user_city ?></p>
                     <?php } ?>
                 </div>
                 <div class="MDTCol5">
                     <strong>User Phone no.</strong><br>
                     <?php foreach($result2 as $row){ ?>
-                    <?php if(empty($row->user_phone_no)){ ?>
-                        <br>
-                    <?php } ?>
+                        <?php if(empty($row->user_phone_no)){ ?>
+                            <br>
+                        <?php } ?>
                         <p><?php echo $row->user_phone_no ?></p>
                     <?php } ?>
                 </div>
                 <div class="MDTCol6">
                     <strong>Action</strong><br>
                     <?php foreach($result2 as $row){ ?>
+                        <?php if(empty($row->user_ID)){ ?>
+                            <br>
+                        <?php } ?>
                         <a class="DeleteAction" href="Delete.php?id=<?php echo $row->user_ID; ?>">Delete</a><br>
                     <?php } ?>
                 </div>

@@ -7,8 +7,8 @@
     <html>
 
     <head>
-        <title>HTML Reference</title>
-        <link rel="icon" href="Data/Icon.png" type="image/gif" sizes="16x16">
+        <title>Do Registeration</title>
+        <link rel="icon" href="Data/Icon.png" type="image/png" sizes="16x16">
         <link rel="stylesheet" type="text/css" href="Data/RegisterStyle.css">
         <script src="Data/Main.js"></script>
     </head>
