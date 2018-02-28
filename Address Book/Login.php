@@ -14,7 +14,7 @@
 
     <body>
         <div class="SIBody">
-            <form name="login_form" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>" enctype="multipart/form-data">
+            <form name="login_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
                 <a href="Default.php">Back</a>
                 <a href="Login.php">Login</a>
                 <a href="Register.php">Register</a>
