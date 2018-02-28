@@ -172,7 +172,7 @@
 					$user_phone_no,
 					$user_email,
 					$user_password
-				));	
+				));
                 $statement = $db->prepare("INSERT INTO user_info 
 				(
 					user_ID, 
@@ -196,7 +196,7 @@
 				echo "<script type='text/javascript'>alert('$message');</script>";
 				//throw new Exception("Thanks! information is Saved.!");
                 
-                header("Location: Document.php");
+                header("Location: Document.php?id=".$user_ID);
                 exit;
             }
         }

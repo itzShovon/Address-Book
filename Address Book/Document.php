@@ -73,7 +73,8 @@
                         <?php if(empty($row->user_ID)){ ?>
                             <br>
                         <?php } ?>
-                        <a class="DeleteAction" href="Delete.php?id=<?php echo $row->user_ID; ?>">Delete</a><br>
+                        <a class="DeleteAction" href="Delete.php?id=<?php echo $row->user_ID; ?>">Delete</a>
+                        <a class="DeleteAction" href="Update.php?id=<?php echo $row->user_ID; ?>">Update</a><br>
                     <?php } ?>
                 </div>
             </div>

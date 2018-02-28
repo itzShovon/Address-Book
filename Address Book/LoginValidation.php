@@ -34,8 +34,10 @@
                 $statement->execute();
                 $result = $statement->fetch();
                 foreach($result as $row){
-                    if($user_password == $row)
-                        header ('Location: Document.php');
+                    if($user_password == $row){
+//                        header ('Location: Document.php');
+                        header ('Location: Document.php?id='."$user_ID");
+                    }
                     else
                         header ('Location: Login.php');
                 }

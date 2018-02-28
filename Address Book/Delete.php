@@ -11,7 +11,6 @@
     $sql3 = "DELETE FROM user_info WHERE user_ID = $user_ID";
 
     try {
-
         $stmt1 = $db->prepare($sql1);
         $stmt1->bindValue(":user_ID", $user_ID);
 
