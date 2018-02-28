@@ -17,7 +17,7 @@ body {
     display: block;
     font-family: Gadugi, Verdana;
     text-align: center;
-    color: #ccffff;
+    color: #f2f2f2;
 }
 
 .Middle{
@@ -62,19 +62,19 @@ a {
     margin-bottom: 20px;
     clear: both;
     text-decoration: none;
-    background-color: rgb(230, 255, 243);
+    background-color: rgb(212, 212, 212);
     padding: 5px 10px;
 }
 
 a:hover {
     color: dimgray;
-    background-color: rgb(240, 255, 248);
+    background-color: rgb(232, 232, 232);
     border-bottom: 2px solid #009952;
 }
 
 a:active {
-    color: dimgray;
-    background-color: #ccffe6;
+    color: #0d0d0d;
+    background-color: rgb(201, 201, 201);
     border-bottom: 2px solid #00ff00;
 }
 
@@ -92,7 +92,6 @@ a:active {
 .FLeft{
     width: 50%;
     float: left;
-/*    background-color: antiquewhite;*/
 }
 
 .FLeft h3{
@@ -113,7 +112,6 @@ a:active {
     width: 50%;
     padding: 10px 0;
     float: right;
-/*    background-color: blueviolet;*/
 }
 
 .FRight p{

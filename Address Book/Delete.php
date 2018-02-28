@@ -1,13 +1,8 @@
 <?php
-
     require 'config.php';
-
     $user_ID = htmlspecialchars($_GET["id"]);
-
     $sql1 = "DELETE FROM user_address WHERE user_ID = $user_ID";
-
     $sql2 = "DELETE FROM user_contact WHERE user_ID = $user_ID";
-
     $sql3 = "DELETE FROM user_info WHERE user_ID = $user_ID";
 
     try {
@@ -56,6 +51,4 @@
     }
 
     header("Location: Document.php");
-
-
 ?>

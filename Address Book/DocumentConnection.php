@@ -1,6 +1,5 @@
 <?php
-    require_once 'config.php';
-
+    require 'config.php';
     try{
         $i=0;												
         $statement1 = $db->prepare("SELECT user_address.user_city FROM user_address");
@@ -16,7 +15,8 @@
     catch (Exception $ex) {
         echo $ex->getMessage();
     }
-
+    
+    $user_ID = "";
     $user_ID = htmlspecialchars($_GET["id"]);
     $temp =  0;
 
@@ -26,5 +26,4 @@
     }
     if($temp == 0)
         header('Location: Default.php');
-
 ?>

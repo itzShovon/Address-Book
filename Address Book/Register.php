@@ -2,7 +2,6 @@
     include("RegistrationValidation.php");
 ?>
 
-
     <!DOCTYPE html>
     <html>
 
@@ -15,7 +14,7 @@
 
     <body>
         <script src="Data/Main.js"></script>
-        <form name="signup_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
+        <form name="signup_form" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>" enctype="multipart/form-data">
             <div class="BodyX" id="BodyX">
                 <div class="Body" id="Body">
                     <div class="BOption">
@@ -23,11 +22,9 @@
                         <a href="Login.php">Login</a>
                         <a href="Register.php">Register</a>
                     </div>
-                    <!--
-                    <div class="Header">
-                        <?php include 'Header.php';?>
-                    </div>
-    -->
+
+                    <div class="Header"></div>
+
                     <div class="Middle" id="Middle">
                         <div class="MTop" id="MTop">
                             <h3>User Registration Form</h3>
@@ -160,14 +157,6 @@
                                         <td><input class="user_phone_no" id="user_phone_no" name="user_phone_no" type="number" placeholder="Phone Number"></td>
                                         <td></td>
                                     </tr>
-                                    <!--
-                                    <tr>
-                                        <td>12.</td>
-                                        <td>E-mail Address</td>
-                                        <td><input class="user_email" id="user_email" name="user_email" type="email" placeholder="E-mail Address"></td>
-                                        <td></td>
-                                    </tr>
--->
                                 </table>
 
                                 <br>
@@ -237,37 +226,6 @@
                                         </td>
                                         <td></td>
                                     </tr>
-                                    <!--
-                                    <tr>
-                                        <td>5.</td>
-                                        <td>City Name</td>
-                                        <td>
-                                            <input list="City" placeholder="City Name">
-                                            <datalist>
-                                                <option value="Bogra">
-                                                <option value="Natore">
-                                                <option value="Joypurhat">
-                                            </datalist>
-                                        </td>
-                                        <td></td>
-                                    </tr>
--->
-                                    <!--
-                                    <tr>
-                                        <td class="col1">6.</td>
-                                        <td class="col2">Police Station</td>
-                                        <td class="col3"><input type="text" placeholder="Police Station"></td>
-                                        <td class="col4"></td>
-                                    </tr>
--->
-                                    <!--
-                                    <tr>
-                                        <td class="col1">7.</td>
-                                        <td class="col2">Post Office</td>
-                                        <td class="col3"><input type="text" placeholder="Post Office"></td>
-                                        <td class="col4"></td>
-                                    </tr>
--->
                                     <tr>
                                         <td class="col1">5.</td>
                                         <td class="col2">Post Code</td>
@@ -283,12 +241,9 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
-                    <!--
-                    <div class="Footer">
-                        <?php include 'Footer.php';?>
-                    </div>
-    -->
+                </div>
+
+                    <div class="Footer"></div>
                 </div>
             </div>
         </form>

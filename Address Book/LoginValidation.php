@@ -1,5 +1,4 @@
 <?php
-
     try{
         include ("config.php");
         
@@ -17,8 +16,6 @@
                 echo "<script type='text/javascript'>alert('$error_message');</script>";
             }
             else{
-                
-//                session_start();
                 $user_ID = "";
                 $user_password = "";
                 
@@ -27,15 +24,12 @@
                 if(isset($_POST['user_password']))
                     $user_password = $_POST['user_password'];
                 
-                
-                
                 $i=0;
                 $statement = $db->prepare("SELECT user_password FROM user_contact WHERE user_ID=$user_ID OR user_email=$user_ID");
                 $statement->execute();
                 $result = $statement->fetch();
                 foreach($result as $row){
                     if($user_password == $row){
-//                        header ('Location: Document.php');
                         header ('Location: Document.php?id='."$user_ID");
                     }
                     else

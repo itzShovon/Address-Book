@@ -15,7 +15,7 @@
 
     <body>
         <script src="Data/Main.js"></script>
-        <form name="signup_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="multipart/form-data">
+        <form name="signup_form" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>" enctype="multipart/form-data">
             <div class="BodyX" id="BodyX">
                 <div class="Body" id="Body">
                     <div class="BOption">
@@ -242,10 +242,10 @@
                             </form>
                         </div>
                     </div>
-                    
+
                     <div class="Footer">
                     </div>
-    
+
                 </div>
             </div>
         </form>

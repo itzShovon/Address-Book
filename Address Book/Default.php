@@ -3,7 +3,7 @@
 
 <head>
     <title>Home Page...</title>
-    <link rel="icon" href="Data/Icon.png" type="image/png" sizes="16x16"> 
+    <link rel="icon" href="Data/Icon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="Data/Style.css">
 </head>
 

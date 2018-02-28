@@ -1,9 +1,6 @@
 <?php
-
     try{
         include ("config.php");
-
-                
         if(isset($_POST['user_submit'])){
             if(isset($_POST['user_first_name']))
                 $user_first_name = $_POST['user_first_name'];
@@ -70,62 +67,11 @@
             $statement->bindParam(':user_birthday_month', $_POST['user_birthday_month'], PDO::PARAM_STR);   
             $statement->bindParam(':user_birthday_year', $_POST['user_birthday_year'], PDO::PARAM_INT);
             $count = $statement->execute();
-
-//            $statement = $db->prepare("UPDATE user_address 
-//            (
-//                user_ID,
-//                user_country, 
-//                user_city, 
-//                user_district,
-//                user_post_code,
-//                user_region
-//            ) 
-//            VALUES (?,?,?,?,?,?)");
-//            $statement->execute(array(		
-//                $user_ID,
-//                $user_country,
-//                $user_city,
-//                $user_district,
-//                $user_post_code,
-//                $user_region
-//            ));	
-//            $statement = $db->prepare("INSERT INTO user_contact 
-//            (
-//                user_ID, 
-//                user_phone_no,
-//                user_email,
-//                user_password
-//            ) 
-//            VALUES (?,?,?,?)");
-//            $statement->execute(array(		
-//                $user_ID,
-//                $user_phone_no,
-//                $user_email,
-//                $user_password
-//            ));	
-//            $statement = $db->prepare("INSERT INTO user_info 
-//            (
-//                user_ID, 
-//                user_name, 
-//                user_blood_group, 
-//                user_birthday_day,
-//                user_birthday_month,
-//                user_birthday_year
-//            )
-//            VALUES (?,?,?,?,?,?)");
-//            $statement->execute(array(		
-//                $user_ID,
-//                $user_name,
-//                $user_blood_group,
-//                $user_birthday_day,
-//                $user_birthday_month,
-//                $user_birthday_year
-//            ));	
-
+            
             $message = "Thanks! information is Saved successfully.";
             echo "<script type='text/javascript'>alert('$message');</script>";
             //throw new Exception("Thanks! information is Saved.!");
-
+            
             header("Location: Document.php?id=".$user_ID);
             exit;
         }
